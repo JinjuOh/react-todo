@@ -1,12 +1,15 @@
 
 import './TodoTemplate.css'
 
-const TodoTemplate = ({form, children}) => {
+const TodoTemplate = ({form, palette, children}) => {
     return (
         <main className="todo-list-template">
             <div className="title">
                 오늘 할 일
             </div>
+            <section className={"palette-wrapper"}>
+                {palette}
+            </section>
             <section className="form-wrapper">
                 {form}
             </section>
